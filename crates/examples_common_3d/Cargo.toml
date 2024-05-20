@@ -7,7 +7,7 @@ edition = "2021"
 use-debug-plugin = []
 
 [dependencies]
-bevy = { version = "0.13", default-features = false, features = [
+bevy = {  git = "https://github.com/nzhao95/bevy", branch = "nzhaodev_13.2", default-features = false, features = [
     "bevy_core_pipeline",
     "bevy_text",
     "bevy_ui",
