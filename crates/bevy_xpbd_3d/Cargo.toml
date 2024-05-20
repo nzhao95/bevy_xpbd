@@ -55,8 +55,8 @@ required-features = ["3d"]
 
 [dependencies]
 bevy_xpbd_derive = { path = "../bevy_xpbd_derive", version = "0.1" }
-bevy = { version = "0.13", default-features = false }
-bevy_math = "0.13"
+bevy = { git = "https://github.com/nzhao95/bevy", branch = "nzhaodev_13.2", default-features = false }
+bevy_math = { git = "https://github.com/nzhao95/bevy", branch = "nzhaodev_13.2" }
 parry3d = { version = "0.13", optional = true }
 parry3d-f64 = { version = "0.13", optional = true }
 nalgebra = { version = "0.32", features = ["convert-glam025"], optional = true }
@@ -69,7 +69,7 @@ itertools = "0.12"
 [dev-dependencies]
 examples_common_3d = { path = "../examples_common_3d" }
 benches_common_3d = { path = "../benches_common_3d" }
-bevy_math = { version = "0.13", features = ["approx"] }
+bevy_math = { git = "https://github.com/nzhao95/bevy", branch = "nzhaodev_13.2", features = ["approx"] }
 approx = "0.5"
 criterion = { version = "0.5", features = ["html_reports"] }
 insta = "1.0"
